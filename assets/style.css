@@ -1,0 +1,116 @@
+:root{
+    --dark-green: #425551;
+    --medium-green: #4E8074;
+    --green: #4BAA94;
+    --light-green: #3BD5B1;
+    --lighter-green: #1CFFCA;
+    --white: #ffff;
+    --shadow: 0.1rem 0.1rem 0.5rem black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+   background: linear-gradient(45deg, blue,cyan); 
+    color: var(--white);
+    font-family: "Lexend";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0.2rem);
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+    justify-content: center;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.profile{
+    width: 30%;
+    border-radius: 15rem;
+    border: 0.5rem solid var(--white);
+    z-index: 10000;
+    position: relative;
+    margin-bottom: 85%;
+}
+.title{
+    text-align: center;
+}
+.text{
+    background: rgba(141, 136, 136, 0.212);
+    backdrop-filter: blur(1rem);
+    padding: 15rem 4rem 4rem 4rem;
+    border-radius: 3rem;
+    position: fixed;
+    box-shadow: var(--shadow);
+}
+.icons img{
+width: 4rem;
+}
+.icons{
+ display: flex;
+ justify-content: center;
+ gap: 1rem;
+ margin: 3rem ;
+}
+.links{
+    margin-bottom: 6rem;
+}
+.links a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(71, 36, 138), rgb(56, 78, 202));
+    margin: 2rem;
+    border-radius: 5rem;
+    height: 6rem;
+    box-shadow: var(--shadow);
+}
+p{
+    font-size: 1.3rem;
+    width: 90%;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .text{
+        padding: 10rem 2rem 2rem 2rem;
+        border-radius: 3rem;
+        position: fixed;
+        box-shadow: var(--shadow);
+        margin-top: 10rem;
+    }
+    h1{
+        font-size: 2.55rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    .profile{
+        width: 40%;
+        margin-bottom: 110%;
+    }
+    .links a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 1.5rem;
+        height: 4rem;
+    }
+
+}
